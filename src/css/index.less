@@ -1,0 +1,117 @@
+* {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    font-size: 16px;
+    .navbar{
+        background-color: #cf4646;
+        div {
+            a {
+                color:@c-fff;
+            }
+        }
+    }
+    .navbar-default{
+        .navbar-brand{
+            color:@c-fff;
+        }
+        .navbar-right{
+            li {
+                a {
+                    color:@c-fff;
+                    font-size: 1.4rem; 
+                }
+            } 
+        }
+    }
+    .wrapper{
+        padding: 4rem 3rem 0;
+        .row{
+            width: 750px;
+            margin: 0 auto;
+            .row-item{
+                margin-top: 2.8rem;
+                h1{
+                    margin-top: 6rem;
+   
+               }
+               .row-item-box{
+                    background-color: #23241f;
+                    color: @c-fff;
+                    line-height: 3rem;
+                    margin-left: 1rem;
+                    margin-top: 1.5rem;
+                    padding-left: 1rem;
+                    font-size: 1.5rem;
+               }
+            }
+            .content{
+                margin-top: 2rem;
+                p{
+                    padding: .8rem 0;
+                    span{
+                        color: #c7254e;
+                    }
+                }
+            }
+            .tell{
+                h2{
+                    margin: 3rem 0;
+                }
+                p{
+                    a{
+                        color: #c7254e;
+                        text-decoration: underline; 
+                        &:hover{
+                            cursor: pointer;
+                            color: red;
+                        } 
+                    }
+                }
+            }
+        }
+        .footer{
+            margin-top: 5rem;
+            div,
+            ul a,
+            div a{
+                text-align: center;
+                font-size: 1.4rem;
+                color: #aaa;
+                text-decoration: none;
+            }
+            .footer-head,
+            .footer-foot{
+                margin-bottom: 1.5rem;
+            }
+            .footer-body{
+                display: flex;
+                flex-wrap:wrap ;
+                justify-content: center;
+                li{
+                   padding: 0 5px;
+                }
+            }
+           
+        }
+    }
+    @media screen  and(min-width:1200px){
+        .navbar .container-fluid,
+        .wrapper{
+            width:@width-1140;
+            margin: 0 auto;
+        }
+    }
+    @media screen  and(max-width:1000px){
+        .wrapper{
+            width:100%;
+            padding: 2rem;
+            margin: 0 auto;
+            .row{
+                width: 100%;
+            }
+        }
+    }
+}
+@c-fff:#fff;
+@width-1140:1140px;
